@@ -1,0 +1,25 @@
+{
+  "name": "3695-gql-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulc100/3695-gql-notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulc100/3695-gql-notes/issues"
+  },
+  "homepage": "https://github.com/paulc100/3695-gql-notes#readme",
+  "dependencies": {
+    "apollo-server": "^2.18.1",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0"
+  }
+}

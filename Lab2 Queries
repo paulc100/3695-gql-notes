@@ -1,0 +1,94 @@
+Query 1 (Get All Notes)
+```
+{
+    getAllNotes {
+        id 
+        date 
+        content 
+        text 
+        audio 
+        url 
+        participants 
+        completed
+    }
+}
+```
+
+Query 2 (Get a Single Note)
+```
+{
+    getNote(id:"1") {
+        id 
+        date 
+        content 
+        text 
+        audio 
+        url 
+        participants 
+        completed
+    }
+}
+```
+
+Query 3 (Get All Notes by Date)
+```
+{
+    getAllByDate {
+        feed(filter:"2020/09/27"){
+            id 
+            date 
+            content 
+            text 
+            audio 
+            url 
+            participants 
+            completed
+        }
+    }
+}
+```
+
+Mutation 1 (Create a New Note)
+```
+mutation {
+    createNote(input: {
+        title: "lab2",
+        content: "ACIT 3695",
+        date: "2020/09/27"
+        participants: "June and Paul"
+        })
+{
+        id 
+        date 
+        content 
+        text 
+        audio 
+        url 
+        participants 
+        completed
+    }
+}
+```
+
+Mutation 2 (Mark Note as Completed)
+```
+mutation {
+    markNoteCompleted(id:"1",input: {
+        title: "lab2",
+        content: "ACIT 3695",
+        date: "2020/09/27"
+        participants: "June and Paul"
+        completed: True
+        })
+{
+        id 
+        date 
+        content 
+        text 
+        audio 
+        url 
+        participants 
+        completed
+    }
+}
+```
